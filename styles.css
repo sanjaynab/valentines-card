@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffebee;
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+}
+
+h1 {
+    color: #e91e63;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #c2185b;
+}
+
+.hidden {
+    display: none;
+}
+
+#surpriseMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #e91e63;
+}
+
+#surpriseImage {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+}

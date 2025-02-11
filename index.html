@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Valentine ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Happy Valentine's Day mi amor! ❤️</h1>
+        <p>I'm sorry I don't have much to give but... here's a little message for my pookie~</p>
+        <button id="surpriseButton">Click for a Surprise!</button>
+        <p id="surpriseMessage" class="hidden">Never forget that you mean the world to me... 💕</p>
+        <img id="surpriseImage" class="hidden" src="our-image.jpeg" alt="Our Photo">
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+    document.getElementById('surpriseButton').addEventListener('click', function() {
+        const message = document.getElementById('surpriseMessage');
+        message.classList.remove('hidden');
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
+    });
+</script>
+
+
